@@ -1,0 +1,125 @@
+# Project information
+site_name: Linux Start
+site_description: A host of information for getting tarted with Linux.
+
+# Copyright
+copyright: 'Copyright &copy; 2019 - Present'
+
+# Navigation
+nav:
+  - Home: index.md
+  - Onboarding:
+    - Introduction to Linux: onboarding/intro.md
+    - Choosing a Distro: onboarding/choosing_distros.md
+    - Interface: onboarding/interface.md
+    - Fundamentals: onboarding/fundamentals.md
+    - Filestructure: onboarding/file_structure.md
+    - File Manipulation: onboarding/file_manipulation.md
+    - Filesystem Navigation: onboarding/filesystem_navigation.md
+  - Baseline:
+    - SSH: baseline/ssh.md
+  - Blog:
+    - blog/index.md
+
+# <!-- START CUSTOMIZATION SECTION -->
+# Documentation and theme
+theme:
+  name: material
+  language: en
+  features:
+    - announce.dismiss
+    - content.code.annotate
+    - content.code.annotation
+    - content.code.copy
+    - content.tabs.link
+    - navigation.indexes
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - search.share
+  palette:
+    primary: 'white'
+    accent: 'deep orange'
+  font:
+    text: 'Rubik'
+    code: 'JetBrains Mono'
+  icon:
+    logo: fontawesome/solid/graduation-cap
+    repo: fontawesome/brands/github
+
+extra_css:
+    - sylesheets/extra.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.js
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
+
+plugins:
+  - search
+  - blog:
+      authors_profiles: true
+  - ezlinks
+  - git-authors:
+      exclude:
+        - index.md
+        - tags.md
+  - git-revision-date-localized:
+      type: timeago
+      locale: en
+      fallback_to_build_date: true
+      exclude:
+        - index.md
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - codehilite:
+      guess_lang: true
+      use_pygments: true
+  - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.pathconverter
+  - pymdownx.saneheaders
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      base_path: .
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+          format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+  - pymdownx.tilde
+  - toc:
+      permalink: false
+      toc_depth: 3
+# <!-- END CUSTOMIZATION SECTION -->
