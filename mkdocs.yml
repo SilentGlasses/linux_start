@@ -81,7 +81,6 @@ plugins:
       fallback_to_build_date: true
       exclude:
         - index.md
-  - glightbox
 
 markdown_extensions:
   - abbr
