@@ -7,7 +7,7 @@ tags:
 
 !!! danger "Important"
     - Your SSH keys belong to you, not your computer. This means if you get a new computer, copy your existing keypair(s) over to the new one.
-    - **NEVER** share your private key. **Always** make sure you are ever only using the key found in your `<keyname.pub` file.
+    - **NEVER** share your private key. **Always** make sure you are ever only using the key found in your `<keyname>.pub` file.
 
 ## Choosing an Algorithm and Key Size
 

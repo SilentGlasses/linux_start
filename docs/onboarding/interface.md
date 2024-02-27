@@ -1,7 +1,7 @@
 Let's familiarize you with the basic desktop environment and user interface commonly found in Linux distributions.
 
 - **Desktop Environment**
-    - A desktop environment provides the graphical user interface (GUI) for interacting with the operating system. The most popular desktop environments in Linux include [GNOME](https://www.gnome.org/), [KDE Plasma](KDE Plasma), [Xfce](https://www.xfce.org/), [Cinnamon](https://github.com/linuxmint/Cinnamon), and [MATE](https://mate-desktop.org/). Each desktop environment offers a different look, feel, and set of features, but they typically include common elements such as a panel, menu, and system tray.
+    - A desktop environment provides the graphical user interface (GUI) for interacting with the operating system. The most popular desktop environments in Linux include [GNOME](https://www.gnome.org/), [KDE Plasma](https://kde.org/plasma-desktop/), [Xfce](https://www.xfce.org/), [Cinnamon](https://github.com/linuxmint/Cinnamon), and [MATE](https://mate-desktop.org/). Each desktop environment offers a different look, feel, and set of features, but they typically include common elements such as a panel, menu, and system tray.
 - **Panel or Taskbar**
     - The panel, also known as a taskbar or dock, is a horizontal or vertical bar that runs along the edge of the screen. It usually contains a variety of icons and applets that provide quick access to commonly used applications, system settings, and notifications. The panel may also display the date and time, a system menu, and indicators for battery life, network connectivity, and sound volume.
 - **Menu**
