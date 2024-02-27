@@ -7,25 +7,27 @@ copyright: 'Copyright &copy; 2019 - Present'
 
 # Navigation
 nav:
-  - Home: index.md
+  - Home: 'index.md'
   - Onboarding:
-    - Introduction to Linux: onboarding/intro.md
-    - Choosing a Distro: onboarding/choosing_distros.md
-    - Interface: onboarding/interface.md
-    - Fundamentals: onboarding/fundamentals.md
-    - Filestructure: onboarding/file_structure.md
-    - File Manipulation: onboarding/file_manipulation.md
-    - Filesystem Navigation: onboarding/filesystem_navigation.md
+    - Introduction to Linux: 'onboarding/intro.md'
+    - Choosing a Distro: 'onboarding/choosing_distros.md'
+    - Interface: 'onboarding/interface.md'
+    - Fundamentals: 'onboarding/fundamentals.md'
+    - Filestructure: 'onboarding/file_structure.md'
+    - File Manipulation: 'onboarding/file_manipulation.md'
+    - Filesystem Navigation: 'onboarding/filesystem_navigation.md'
   - Baseline:
-    - SSH: baseline/ssh.md
+    - 'baseline/index.md'
+    - SSH: 'baseline/ssh.md'
   - Blog:
-    - blog/index.md
+    - 'blog/index.md'
 
 # <!-- START CUSTOMIZATION SECTION -->
 # Documentation and theme
 theme:
   name: material
   language: en
+  custom_dir: overrides
   features:
     - announce.dismiss
     - content.code.annotate
@@ -43,6 +45,9 @@ theme:
   palette:
     primary: 'white'
     accent: 'deep orange'
+    toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
   font:
     text: 'Rubik'
     code: 'JetBrains Mono'
@@ -60,7 +65,11 @@ extra_javascript:
 plugins:
   - search
   - blog:
-      authors_profiles: true
+      authors: true
+      archive_date_format: MMMM yyyy
+      pagination: true
+      pagination_per_page: 5
+      pagination_format: "$link_first $link_previous ~2~ $link_next $link_last"
   - ezlinks
   - git-authors:
       exclude:
@@ -72,6 +81,7 @@ plugins:
       fallback_to_build_date: true
       exclude:
         - index.md
+  - glightbox
 
 markdown_extensions:
   - abbr
@@ -91,9 +101,11 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.highlight
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink:
@@ -112,7 +124,6 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-          format: !!python/name:pymdownx.superfences.fence_div_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
