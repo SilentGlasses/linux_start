@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # Getting started with Linux
 
 GNU/Linux, often referred to as simply Linux, is a powerful and versatile operating system that has gained widespread popularity and adoption around the world. Unlike other operating systems, GNU/Linux is built upon the principles of open-source software, which means that its source code is freely available to the public, allowing anyone to view, modify, and distribute it.
