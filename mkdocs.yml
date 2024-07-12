@@ -1,6 +1,6 @@
 # Project information
 site_name: Linux Start
-site_description: A host of information for getting tarted with Linux.
+site_description: A host of information for getting started with Linux.
 
 # Copyright
 copyright: 'Copyright &copy; 2024 - Present'
@@ -9,7 +9,7 @@ copyright: 'Copyright &copy; 2024 - Present'
 nav:
   - Home: 'index.md'
   - Onboarding:
-    - Introduction to Linux: 'onboarding/intro.md'
+    - Intro to Linux: 'onboarding/intro.md'
     - Choosing a Distro: 'onboarding/choosing_distros.md'
     - Interface: 'onboarding/interface.md'
     - Fundamentals: 'onboarding/fundamentals.md'
@@ -29,19 +29,23 @@ theme:
   language: en
   custom_dir: overrides
   features:
-    - announce.dismiss
+    - content.action.view # Allows for direct viewing of code
     - content.code.annotate
-    - content.code.annotation
     - content.code.copy
+    - content.code.select
     - content.tabs.link
+    - navigation.expand
     - navigation.indexes
     - navigation.instant
+    - navigation.instant.progress
+    - navigation.instant.preview
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
     - search.highlight
-    - search.suggest
     - search.share
+    - search.suggest
+    - toc.follow
   palette:
     primary: 'white'
     accent: 'deep orange'
