@@ -5,25 +5,14 @@ tags:
 
 # Using SSH Keys
 
-!!! danger "Important"
+!!! danger "Important"-
+    - **Passphrase Requirement**:
+        - A passphrase must be used when creating SSH keys. Using a passphrase increases the security when you are using SSH keys. Using a key without a passphrase can be risky.
+        - If someone obtains a key (from a backup tape, or a one-time vulnerability) that doesn't include a passphrase, the remote account can be compromised.
     - Your SSH keys belong to you, not your computer. This means if you get a new computer, copy your existing keypair(s) over to the new one.
     - **NEVER** share your private key. **Always** make sure you are ever only using the key found in your `<keyname>.pub` file.
 
-## Choosing an Algorithm and Key Size
-
-I use **ed25519**, despite it saying that it's not widely used, more and more places support it in production and more are supporting all the time.
-
-!!! quote
-    SSH supports several public key algorithms for authentication keys. These include:
-
-    - **rsa** - an old algorithm based on the difficulty of factoring large numbers. A key size of at least 2048 bits is recommended for RSA; 4096 bits is better. RSA is getting old and significant advances are being made in factoring. Choosing a different algorithm may be advisable. It is quite possible the RSA algorithm will become practically breakable in the foreseeable future. All SSH clients support this algorithm.
-    - **dsa** - an old US government Digital Signature Algorithm. It is based on the difficulty of computing discrete logarithms. A key size of 1024 would normally be used with it. DSA in its original form is no longer recommended.
-    - **ecdsa** - a new Digital Signature Algorithm standarized by the US government, using elliptic curves. This is probably a good algorithm for current applications. Only three key sizes are supported: 256, 384, and 521 (sic!) bits. We would recommend always using it with 521 bits, since the keys are still small and probably more secure than the smaller keys (even though they should be safe as well). Most SSH clients now support this algorithm.
-    - **ed25519** - this is a new algorithm added in OpenSSH. Support for it in clients is not yet universal. Thus its use in general purpose applications may not yet be advisable.
-
-    ~ [Source: ssh.com](https://www.ssh.com/ssh/keygen)
-
-### Generating keys
+## Generating keys
 
 Create your PEM formatted key(s) then add it/them to your keychain and wherever you will need them.
 
@@ -31,14 +20,10 @@ Run the following command to initiate the creation:
 
 ```
 ssh-keygen -m PEM -t rsa -b 4096 -f ~/.ssh/id_rsa -C "$(whoami)@$(uname -n)_$(date -I)"
-ssh-keygen -m PEM -t ed25519 -f ~/.ssh/id_ed25519 -C "$(whoami)@$(uname -n)_$(date -I)"
+ssh-keygen -m PEM -t ed25519 -f ~/.ssh/id_ed25519 -C "$(whoami)@$(uname -n)-$(date -I)"
 ```
 
 Now you need to enter a passphrase.
-
-!!! note
-    - When generating keys, we **HIGHLY RECOMMEND** using a secure passphrase. Using a passphrase increases the security when you are using SSH keys. Using a key without a passphrase can be risky.
-    - If someone obtains a key (from a backup tape, or a one-time vulnerability) that doesn't include a passphrase, the remote account can be compromised.
 
 ```
 # Enter passphrase (empty for no passphrase): [Type a passphrase]
@@ -66,7 +51,31 @@ The key's randomart image is:
 +----[SHA256]-----+
 ```
 
-### Adding your Key to the SSH Agent
+## Secure File Permissions
+
+Ensure your ssh directory and key files are properly secured:
+
+- for the directory
+```
+chmod 700 ~/.ssh
+```
+- for private keys
+```
+chmod 600 ~/.ssh/id_rsa
+chmod 600 ~/.ssh/id_ed25519
+```
+- for public keys
+```
+chmod 644 ~/.ssh/id_rsa.pub
+chmod 644 ~/.ssh/id_ed25519.pub
+```
+
+!!! note
+    - `chmod 700` or `drwx------`: Grants all permissions only to the owner, and removes all other permissions to everyone else.
+    - `chmod 600` or `-rw-------`: Grants read and write permissions to the owner, and removes all other permissions to everyone else.
+    - `chmod 644` or `-rw-r--r--`: Grants read and write permissions to the owner, and read-only permissions to everyone else.
+
+## Adding your Key to the SSH Agent
 
 - Start the SSH Agent in the background
 ```
@@ -74,6 +83,7 @@ eval "$(ssh-agent -s)"
 ```
 - Add the key:
 ```
+ssh-add ~/.ssh/id_rsa
 ssh-add ~/.ssh/id_ed25519
 ```
 - Setup your ssh config:
@@ -93,13 +103,12 @@ ssh-add -l
 
 ## Using Keychain
 
-- Install keychain
+- Install Keychain:
 ```
 sudo apt install keychain
 ```
-- Add the following lines to your `.bashrc` or `~/.zshrc` file:
+- Add this to your `.zshrc` file:
 ```
-# Handling SSH Keys
-#=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-eval `keychain --eval id_ed25519`
+/usr/bin/keychain $HOME/.ssh/id_ed25519
+source $HOME/.keychain/$HOSTNAME -sh
 ```
