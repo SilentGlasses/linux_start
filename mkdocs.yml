@@ -74,7 +74,7 @@ plugins:
       pagination: true
       pagination_per_page: 5
       pagination_format: "$link_first $link_previous ~2~ $link_next $link_last"
-  - ezlinks
+  - autolinks
   - git-authors:
       exclude:
         - index.md
@@ -83,6 +83,7 @@ plugins:
       type: timeago
       locale: en
       fallback_to_build_date: true
+      enable_creation_date: true
       exclude:
         - index.md
 
@@ -104,8 +105,8 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
       emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       line_spans: __span
       pygments_lang_class: true
