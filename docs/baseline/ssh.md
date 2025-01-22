@@ -1,15 +1,12 @@
----
-tags:
-  - ssh keys
----
-
 # Using SSH Keys
 
-!!! danger "Important"-
+!!! danger "Important"
     - **Passphrase Requirement**:
-        - A passphrase must be used when creating SSH keys. Using a passphrase increases the security when you are using SSH keys. Using a key without a passphrase can be risky.
-        - If someone obtains a key (from a backup tape, or a one-time vulnerability) that doesn't include a passphrase, the remote account can be compromised.
-    - Your SSH keys belong to you, not your computer. This means if you get a new computer, copy your existing keypair(s) over to the new one.
+        - A passphrase **must be used** when creating SSH keys. 
+            - Using a passphrase increases the security when you are using SSH keys.
+            - Using a key without a passphrase can be risky.
+            - If someone obtains a key (from a backup tape, or a one-time vulnerability) that doesn't include a passphrase, the remote account can easily be compromised.
+    - Your SSH keys belongs to you, not your computer. This means if you get a new computer, copy your existing keypair(s) over to the new one.
     - **NEVER** share your private key. **Always** make sure you are ever only using the key found in your `<keyname>.pub` file.
 
 ## Generating keys
