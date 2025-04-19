@@ -1,4 +1,4 @@
-# Installing Python on Linux with Homebrew & Using .venv Virtual Environments
+# Installing Python on Linux
 
 This guide walks you through installing Python on a Linux system using the Homebrew package manager and explains how to create and manage isolated project environments using Python's built-in `venv` module.
 
@@ -10,7 +10,7 @@ While most Linux distributions have their own package managers (like `apt` for D
 - **Up-to-date Packages:** Often provides newer versions of software than might be available in default distribution repositories.
 - **Consistent Environment:** Useful if you also work on macOS, as it uses the same commands.
 
-**Why Virtual Environments (`.venv`)?**
+## Why Virtual Environments (`.venv`)?
 
 Python projects often depend on specific versions of external libraries. Installing these globally can lead to conflicts between projects requiring different versions of the same library. Virtual environments solve this by:
 
@@ -27,11 +27,11 @@ Python projects often depend on specific versions of external libraries. Install
     - **Debian/Ubuntu:** `sudo apt update && sudo apt install build-essential curl file git`
     - **Fedora/CentOS/RHEL:** `sudo dnf groupinstall "Development Tools" && sudo dnf install curl file git`
 
-## Step 1: Install Homebrew (Linuxbrew)
+## Install Homebrew (Linuxbrew)
 
 1.  **Download and Run the Installer:** Open your terminal and run the official installation script from the Homebrew website (`brew.sh`).
 ```bash
-/bin/bash -c "$(curl -fsSL [https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh](https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh))"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 !!! note
     - Always check the official [Homebrew website](https://brew.sh/) for the most current installation command, as it might change.
@@ -42,8 +42,8 @@ Python projects often depend on specific versions of external libraries. Install
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.profile
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 ```
-    - You might need to add this to `.bash_profile`, `.zprofile`, or another shell configuration file depending on your shell and setup. The installer's output is the best guide.
-    - Close and reopen your terminal or run `source ~/.profile` (or the relevant config file) for the changes to take effect.
+    - You might need to add this to `.bashrc`, `.zshrc`, or another shell configuration file depending on your shell and setup. The installer's output is the best guide.
+    - Close and reopen your terminal or run either  `source ~/.bashrc` or `source ~/.zshrc` (or the relevant config file) for the changes to take effect.
 3.  **Verify Installation:** Check that Homebrew is installed correctly.
 ```bash
 brew --version
@@ -51,7 +51,7 @@ brew doctor
 ```
 `brew doctor` will check for potential issues with your setup. Address any warnings if necessary.
 
-## Step 2: Install Python using Homebrew
+## Install Python using Homebrew
 
 1.  **Update Homebrew:** Ensure Homebrew has the latest package information.
 ```bash
@@ -75,7 +75,7 @@ which python3
 !!! important
     Your system might still have a default Python installed (accessible via `python` or an older `python3`). Using `python3` after installing with Homebrew ensures you're using the Homebrew-managed version.
 
-## Step 3: Creating and Using a Virtual Environment
+## Creating and Using a Virtual Environment
 
 Now that you have Python installed, let's create an isolated environment for a project.
 
@@ -114,7 +114,7 @@ deactivate
 ```
     - Your shell prompt will return to normal.
 
-## Step 4: Best Practices
+## Best Practices
 
 === ".gitignore"
     Add your virtual environment directory (`.venv/`) to your project's `.gitignore` file. This prevents committing the large environment directory and its installed packages (which can be platform-specific) to your version control system (like Git).
