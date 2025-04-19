@@ -18,8 +18,9 @@ nav:
     - Filesystem Navigation: 'onboarding/filesystem_navigation.md'
   - Baseline:
     - 'baseline/index.md'
-    - SSH: 'baseline/ssh.md'
-    - Python: 'baseline/python.md'
+    - Setup:
+        - SSH: 'setup/ssh.md'
+        - Python: 'setup/python.md'
     - Version Control:
       - Git Intro: 'baseline/git/vc_git.md'
       - Git Concepts: 'baseline/git/git-core-concepts.md'
