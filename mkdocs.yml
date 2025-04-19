@@ -19,6 +19,25 @@ nav:
   - Baseline:
     - 'baseline/index.md'
     - SSH: 'baseline/ssh.md'
+    - Python: 'baseline/python.md'
+    - Version Control:
+      - Git Intro: 'baseline/git/vc_git.md'
+      - Git Concepts: 'baseline/git/git-core-concepts.md'
+      - Git Remotes: 'baseline/git/git-remotes.md'
+      - Git Commands: 'baseline/git/git-useful-commands.md'
+    - Development:
+      - Intro: 'baseline/dev/dev_index.md'
+      - Editors: 'baseline/dev/ides.md'
+      - Debugging: 'baseline/dev/debug.md'
+      - Build Tools: 'baseline/dev/build_tools.md'
+      - APIs: 'baseline/dev/apis.md'
+      - Secure Coding: 'baseline/dev/secure_coding.md'
+    - Networking:
+      - Intro: 'baseline/networking/net_intro.md'
+      - Concepts: 'baseline/networking/networking_concepts.md'
+      - Commands: 'baseline/networking/networking_commands.md'
+      - SSH: 'baseline/networking/ssh_secure_shell.md'
+      - Network Models: 'baseline/networking/network_models.md'
   - Blog:
     - 'blog/index.md'
 
@@ -53,7 +72,7 @@ theme:
         icon: material/toggle-switch-off
         name: Switch to system preference
   font:
-    text: 'Rubik'
+    text: 'IBM Plex Sans'
     code: 'JetBrains Mono'
   icon:
     logo: fontawesome/solid/graduation-cap

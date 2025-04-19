@@ -2,7 +2,7 @@
 
 !!! danger "Important"
     - **Passphrase Requirement**:
-        - A passphrase **must be used** when creating SSH keys. 
+        - A passphrase **must be used** when creating SSH keys.
             - Using a passphrase increases the security when you are using SSH keys.
             - Using a key without a passphrase can be risky.
             - If someone obtains a key (from a backup tape, or a one-time vulnerability) that doesn't include a passphrase, the remote account can easily be compromised.
@@ -106,6 +106,10 @@ sudo apt install keychain
 ```
 - Add this to your `.zshrc` file:
 ```
-/usr/bin/keychain $HOME/.ssh/id_ed25519
-source $HOME/.keychain/$HOSTNAME -sh
+# Handling SSH Keys
+#=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+if [ -z "$SSH_AUTH_SOCK" ]; then
+    eval "$(ssh-agent -s)"
+    ssh-add -t 518400 ~/.ssh/id_ed25519
+fi
 ```
