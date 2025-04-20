@@ -10,22 +10,38 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      # Step 1: Checkout the repository
       - uses: actions/checkout@v4
+
+      # Step 2: Configure Git credentials
       - name: Configure Git Credentials
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+
+      # Step 3: Set up Python
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
-          fetch-depth: 0
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
+
+      # Step 4: Prepare cache directory and set cache ID
+      - name: Prepare Cache
+        run: |
+          mkdir -p .cache
+          echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
+
+      # Step 5: Cache dependencies
       - uses: actions/cache@v4
         with:
-          key: mkdocs-material-${{ env.cache_id }}
-          fetch-depth: 0
           path: .cache
+          key: mkdocs-material-${{ env.cache_id }}
           restore-keys: |
             mkdocs-material-
-      - run: python3 -m pip install --upgrade pip -r requirements.txt --progress-bar off
-      - run: mkdocs gh-deploy --force
+
+      # Step 6: Install dependencies
+      - name: Install Dependencies
+        run: python3 -m pip install --upgrade pip -r requirements.txt --progress-bar off
+
+      # Step 7: Deploy with MkDocs
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force
