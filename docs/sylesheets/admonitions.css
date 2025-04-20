@@ -1,0 +1,180 @@
+/* Admonition base */
+.md-typeset .admonition {
+  background-color: var(--nord6);
+  border-left: 0.2rem solid;
+  margin: 1.5em 0;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+  box-shadow: var(--md-shadow-z1);
+  font-size: 0.85rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.md-typeset .admonition-title {
+  position: relative;
+  margin: -1em -1em 0.8em -1em;
+  padding: 0.5em 1em 0.5em 2em;
+  font-weight: 700;
+  border-bottom: 0.05rem solid;
+  color: var(--nord0);
+}
+
+.md-typeset .admonition-title::before {
+  position: absolute;
+  left: 0.6em;
+  top: 0.5em;
+  font-family: "Material Icons";
+  font-size: 1rem;
+  color: inherit;
+}
+
+/* Helper to apply the same Nord color consistently */
+:root {
+  --admonition-note:      var(--nord8);
+  --admonition-abstract:  var(--nord9);
+  --admonition-info:      var(--nord7);
+  --admonition-tip:       var(--nord14);
+  --admonition-success:   var(--nord14);
+  --admonition-question:  var(--nord15);
+  --admonition-warning:   var(--nord12);
+  --admonition-caution:   var(--nord12);
+  --admonition-failure:   var(--nord11);
+  --admonition-danger:    var(--nord11);
+  --admonition-bug:       var(--nord11);
+  --admonition-example:   var(--nord15);
+  --admonition-quote:     var(--nord10);
+  --admonition-important: var(--nord10);
+}
+
+/* Consistent color mapping */
+.md-typeset .admonition.note {
+  border-color: var(--nord8);
+}
+.md-typeset .admonition.note > .admonition-title {
+  background-color: color-mix(in srgb, var(--nord8) 10%, transparent);
+  color: var(--nord8);
+}
+.md-typeset .admonition.note > .admonition-title::before { content: "event_note"; background-color: var(--nord8); }
+
+.md-typeset .admonition.abstract,
+.md-typeset .admonition.summary {
+  border-color: var(--nord9);
+}
+.md-typeset .admonition.abstract > .admonition-title,
+.md-typeset .admonition.summary > .admonition-title {
+  background-color: color-mix(in srgb, var(--nord9) 10%, transparent);
+  color: var(--nord9);
+}
+.md-typeset .admonition.abstract > .admonition-title::before,
+.md-typeset .admonition.summary > .admonition-title::before {
+  content: "short_text"; background-color: var(--nord9);
+}
+
+.md-typeset .admonition.info {
+  border-color: var(--nord7);
+}
+.md-typeset .admonition.info > .admonition-title {
+  background-color: color-mix(in srgb, var(--nord7) 10%, transparent);
+  color: var(--nord7);
+}
+.md-typeset .admonition.info > .admonition-title::before { content: "info"; background-color: var(--nord7); }
+
+.md-typeset .admonition.tip {
+  border-color: var(--nord14);
+}
+.md-typeset .admonition.tip > .admonition-title {
+  background-color: color-mix(in srgb, var(--nord14) 10%, transparent);
+  color: var(--nord14);
+}
+.md-typeset .admonition.tip > .admonition-title::before { content: "lightbulb"; background-color: var(--nord14); }
+
+.md-typeset .admonition.success {
+  border-color: var(--nord14);
+}
+.md-typeset .admonition.success > .admonition-title {
+  background-color: color-mix(in srgb, var(--nord14) 10%, transparent);
+  color: var(--nord14);
+}
+.md-typeset .admonition.success > .admonition-title::before { content: "check_circle"; background-color: var(--nord14) }
+
+.md-typeset .admonition.question {
+  border-color: var(--nord15);
+}
+.md-typeset .admonition.question > .admonition-title {
+  background-color: color-mix(in srgb, var(--nord15) 10%, transparent);
+  color: var(--nord15);
+}
+.md-typeset .admonition.question > .admonition-title::before { content: "help"; background-color: var(--nord15); }
+
+.md-typeset .admonition.warning {
+  border-color: var(--nord12);
+}
+.md-typeset .admonition.warning > .admonition-title {
+  background-color: color-mix(in srgb, var(--nord12) 10%, transparent);
+  color: var(--nord12);
+}
+.md-typeset .admonition.warning > .admonition-title::before { content: "warning"; background-color: }
+
+.md-typeset .admonition.caution {
+  border-color: var(--nord12);
+}
+.md-typeset .admonition.caution > .admonition-title {
+  background-color: color-mix(in srgb, var(--nord12) 10%, transparent);
+  color: var(--nord12);
+}
+.md-typeset .admonition.caution > .admonition-title::before { content: "report_problem"; background-color: var(--nord12) }
+
+.md-typeset .admonition.failure {
+  border-color: var(--nord11);
+}
+.md-typeset .admonition.failure > .admonition-title {
+  background-color: color-mix(in srgb, var(--nord11) 10%, transparent);
+  color: var(--nord11);
+}
+.md-typeset .admonition.failure > .admonition-title::before { content: "cancel"; background-color: var(--nord11); }
+
+.md-typeset .admonition.danger {
+  border-color: var(--nord11);
+}
+.md-typeset .admonition.danger > .admonition-title {
+  background-color: color-mix(in srgb, var(--nord11) 10%, transparent);
+  color: var(--nord11);
+}
+.md-typeset .admonition.danger > .admonition-title::before { content: "report"; background-color: var(--nord11); }
+
+.md-typeset .admonition.bug {
+  border-color: var(--nord11);
+}
+.md-typeset .admonition.bug > .admonition-title {
+  background-color: color-mix(in srgb, var(--nord11) 10%, transparent);
+  color: var(--nord11);
+}
+.md-typeset .admonition.bug > .admonition-title::before { content: "bug_report" background-color: var(--nord11); }
+
+.md-typeset .admonition.example {
+  border-color: var(--nord15);
+}
+.md-typeset .admonition.example > .admonition-title {
+  background-color: color-mix(in srgb, var(--nord15) 10%, transparent);
+  color: var(--nord15);
+}
+.md-typeset .admonition.example > .admonition-title::before { content: "science"; background-color: var(--nord15); }
+
+.md-typeset .admonition.quote {
+  border-color: var(--nord10);
+}
+.md-typeset .admonition.quote > .admonition-title {
+  background-color: color-mix(in srgb, var(--nord10) 10%, transparent);
+  color: var(--nord10);
+}
+.md-typeset .admonition.quote > .admonition-title::before { content: "format_quote"; background-color: var(--nord10); }
+
+.md-typeset .admonition.important {
+  border-color: var(--nord10);
+}
+.md-typeset .admonition.important > .admonition-title {
+  background-color: color-mix(in srgb, var(--nord10) 10%, transparent);
+  color: var(--nord10);
+}
+.md-typeset .admonition.important > .admonition-title::before { content: "priority_high"; background-color: var(--nord10); }

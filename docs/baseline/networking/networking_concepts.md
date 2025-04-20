@@ -2,7 +2,7 @@
 
 Before diving into networking commands and tools, it's essential to understand the fundamental concepts that underpin all networking. These concepts provide the context for using tools effectively.
 
-## 1. **IP Addresses**
+## IP Addresses
 
 - **IPv4**: A 32-bit address (e.g., `192.168.1.1`) used to identify devices on a network.
 - **IPv6**: A 128-bit address designed to replace IPv4, offering more unique addresses and better security.
@@ -11,7 +11,7 @@ Before diving into networking commands and tools, it's essential to understand t
 
 IP addresses are like the "home addresses" of devices on a network. They allow devices to find and communicate with each other.
 
-## 2. **Subnets**
+## Subnets
 
 - Subnets divide a network into smaller segments to improve performance and security.
 - **Subnet Mask**: Indicates which part of an IP address identifies the network vs. the host.
@@ -20,7 +20,7 @@ IP addresses are like the "home addresses" of devices on a network. They allow d
 
 Subnets optimize network traffic and enhance security by isolating sections of a network.
 
-## 3. **DNS (Domain Name System)**
+## DNS (Domain Name System)
 
 - Translates human-readable domain names (e.g., `google.com`) into IP addresses.
 
@@ -28,7 +28,7 @@ Subnets optimize network traffic and enhance security by isolating sections of a
 
 Without DNS, you'd need to remember IP addresses for every website or service you want to access.
 
-## 4. **Ports**
+## Ports
 
 - Ports are unique endpoints for specific types of network communication.
   - **HTTP**: Port 80
@@ -39,7 +39,7 @@ Without DNS, you'd need to remember IP addresses for every website or service yo
 
 Understanding ports helps you identify and troubleshoot issues related to specific services.
 
-## 5. **Protocols**
+## Protocols
 - **TCP (Transmission Control Protocol)**: Reliable, connection-based communication.
 - **UDP (User Datagram Protocol)**: Faster, connectionless communication.
 - **HTTP/HTTPS**: Protocols for web traffic.

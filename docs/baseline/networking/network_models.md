@@ -133,18 +133,18 @@ Here’s a comparison of the two models:
 Example: Sending a Web Request
 
 === "OSI Model"
-    1. **Application Layer (7):** Your browser sends an HTTP request.
-    2. **Presentation Layer (6):** The data is encrypted using SSL/TLS.
-    3. **Session Layer (5):** A session is established between your browser and the remote server.
-    4. **Transport Layer (4):** TCP ensures the data is split into packets and sent reliably.
-    5. **Network Layer (3):** Each packet is assigned an IP address and routed to the destination.
-    6. **Data Link Layer (2):** The packets are framed and sent over the local network.
-    7. **Physical Layer (1):** The data travels as electrical signals or wireless waves.
+    1. **Application Layer (7)**: Your browser sends an HTTP request.
+    2. **Presentation Layer (6)**: The data is encrypted using SSL/TLS.
+    3. **Session Layer (5)**: A session is established between your browser and the remote server.
+    4. **Transport Layer (4)**: TCP ensures the data is split into packets and sent reliably.
+    5. **Network Layer (3)**: Each packet is assigned an IP address and routed to the destination.
+    6. **Data Link Layer (2)**: The packets are framed and sent over the local network.
+    7. **Physical Layer (1)**: The data travels as electrical signals or wireless waves.
 === "TCP/IP Model"
-    1. **Application Layer:** Your browser sends an HTTP request.
-    2. **Transport Layer:** TCP splits the data into packets.
-    3. **Internet Layer:** IP assigns an address and routes the packets.
-    4. **Network Access Layer:** The packets are sent over the hardware (e.g., Ethernet or Wi-Fi).
+    1. **Application Layer**: Your browser sends an HTTP request.
+    2. **Transport Layer**: TCP splits the data into packets.
+    3. **Internet Layer**: IP assigns an address and routes the packets.
+    4. **Network Access Layer**: The packets are sent over the hardware (e.g., Ethernet or Wi-Fi).
 
 ## Why Learn Both Models?
 

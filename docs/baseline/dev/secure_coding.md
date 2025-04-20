@@ -31,7 +31,7 @@ Be aware of common attack vectors:
 - **Broken Authentication**: Flaws in login, session management, or password recovery mechanisms. Defense: Strong password policies, multi-factor authentication, secure session handling.
 - **Broken Access Control** (e.g., Insecure Direct Object References - IDOR): Allowing users to access resources or perform actions they shouldn't be authorized for. Defense: Enforce authorization checks on the server-side for every request.
 - **Security Misconfiguration**: Incorrectly configured security settings in the application, web server, database, or framework. Defense: Secure defaults, regular audits, automated configuration checks.
-- **Using Components with Known Vulnerabilitie**s: Relying on outdated or insecure third-party libraries or frameworks. Defense: Regularly scan dependencies and update them promptly.
+- **Using Components with Known Vulnerabilities**: Relying on outdated or insecure third-party libraries or frameworks. Defense: Regularly scan dependencies and update them promptly.
 
 ## Tools and Practices
 
