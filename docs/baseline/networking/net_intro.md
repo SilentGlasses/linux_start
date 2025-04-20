@@ -17,11 +17,13 @@ For Linux users, networking knowledge is even more vital. Linux powers most serv
 ## Why Learn Networking in Linux?
 
 Learning networking in Linux equips you with the skills to:
+
 1. **Manage Servers**: Configure, secure, and maintain Linux-based systems.
 2. **Troubleshoot Connectivity**: Use Linux tools to diagnose and resolve network issues.
 3. **Enhance Security**: Understand secure communication methods like SSH and key management.
 
 This series covers three essential topics to kickstart your networking journey:
+
 1. **Networking Concepts**: Learn the building blocks like IP addresses, DNS, and protocols.
 2. **Linux Networking Commands**: Master tools for monitoring and troubleshooting networks.
 3. **SSH (Secure Shell)**: Discover secure ways to access and manage remote Linux systems.

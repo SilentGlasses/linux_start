@@ -39,6 +39,8 @@ nav:
       - Commands: 'baseline/networking/networking_commands.md'
       - SSH: 'baseline/networking/ssh_secure_shell.md'
       - Network Models: 'baseline/networking/network_models.md'
+  - Contribute:
+    - Admonitions: 'contribute/admonitions.md'
   - Blog:
     - 'blog/index.md'
 
@@ -81,6 +83,7 @@ theme:
 
 extra_css:
     - sylesheets/extra.css
+    - sylesheets/admonitions.css
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.js

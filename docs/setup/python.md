@@ -2,15 +2,15 @@
 
 This guide walks you through installing Python on a Linux system using the Homebrew package manager and explains how to create and manage isolated project environments using Python's built-in `venv` module.
 
-**Why Homebrew on Linux (Linuxbrew)?**
+## Why Homebrew on Linux?
 
 While most Linux distributions have their own package managers (like `apt` for Debian/Ubuntu, `dnf`/`yum` for Fedora/CentOS), Homebrew (often called Linuxbrew when on Linux) offers some advantages:
 
-- **User-space Installation:** Installs packages in your home directory, avoiding the need for `sudo` for package management after the initial Homebrew install.
-- **Up-to-date Packages:** Often provides newer versions of software than might be available in default distribution repositories.
-- **Consistent Environment:** Useful if you also work on macOS, as it uses the same commands.
+- **User-space Installation**: Installs packages in your home directory, avoiding the need for `sudo` for package management after the initial Homebrew install.
+- **Up-to-date Packages**: Often provides newer versions of software than might be available in default distribution repositories.
+- **Consistent Environment**: Useful if you also work on macOS, as it uses the same commands.
 
-## Why Virtual Environments (`.venv`)?
+## Why Virtual Environments?
 
 Python projects often depend on specific versions of external libraries. Installing these globally can lead to conflicts between projects requiring different versions of the same library. Virtual environments solve this by:
 
@@ -24,22 +24,28 @@ Python projects often depend on specific versions of external libraries. Install
 - A Linux system.
 - Basic familiarity with the Linux command line (terminal).
 - `curl`, `git`, and `build-essential` (or equivalent development tools for your distribution) installed. You can usually install these using your system's package manager:
-    - **Debian/Ubuntu:** `sudo apt update && sudo apt install build-essential curl file git`
-    - **Fedora/CentOS/RHEL:** `sudo dnf groupinstall "Development Tools" && sudo dnf install curl file git`
+    - **Debian**/**Ubuntu**/**Pop!_OS**:
+    ```
+    sudo apt update && sudo apt install build-essential curl file git
+    ```
+    - **Fedora**/**CentOS**/**RHEL**:
+    ```
+    sudo dnf groupinstall "Development Tools" && sudo dnf install curl file git
+    ```
 
 ## Install Homebrew (Linuxbrew)
 
-1.  **Download and Run the Installer:** Open your terminal and run the official installation script from the Homebrew website (`brew.sh`).
+1.  **Download and Run the Installer**: Open your terminal and run the official installation script from the Homebrew website (`brew.sh`).
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 !!! note
     - Always check the official [Homebrew website](https://brew.sh/) for the most current installation command, as it might change.
     - The script will explain what it will do and prompt you for your password (for `sudo`) at certain points during the installation.
-2.  **Add Homebrew to your PATH:** After the installation completes, the script will likely output instructions to add Homebrew to your system's PATH. This usually involves running a couple of commands similar to these (the exact commands will be provided by the installer output – **use those!**):
+2.  **Add Homebrew to your PATH**: After the installation completes, the script will likely output instructions to add Homebrew to your system's PATH. This usually involves running a couple of commands similar to these (the exact commands will be provided by the installer output – **use those!**):
 ```bash
 # Example commands - Follow the instructions from *your* installation!
-echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.profile
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.zshrc
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 ```
     - You might need to add this to `.bashrc`, `.zshrc`, or another shell configuration file depending on your shell and setup. The installer's output is the best guide.
@@ -53,16 +59,16 @@ brew doctor
 
 ## Install Python using Homebrew
 
-1.  **Update Homebrew:** Ensure Homebrew has the latest package information.
+1.  **Update Homebrew**: Ensure Homebrew has the latest package information.
 ```bash
 brew update
 ```
-2.  **Install Python:** Use Homebrew to install the latest stable version of Python 3.
+2.  **Install Python**: Use Homebrew to install the latest stable version of Python 3.
 ```bash
 brew install python
 ```
     - Homebrew typically installs Python as `python3`.
-3.  **Verify Python Installation:** Check the installed Python version.
+3.  **Verify Python Installation**: Check the installed Python version.
 ```bash
 python3 --version
 ```
@@ -73,23 +79,24 @@ which python3
     - This should point to a path within your Homebrew installation directory (e.g., `/home/linuxbrew/.linuxbrew/bin/python3` or similar).
 
 !!! important
-    Your system might still have a default Python installed (accessible via `python` or an older `python3`). Using `python3` after installing with Homebrew ensures you're using the Homebrew-managed version.
+    - Your system might still have a default Python installed (accessible via `python` or an older `python3`).
+    - Using `python3` after installing with Homebrew ensures you're using the Homebrew-managed version.
 
 ## Creating and Using a Virtual Environment
 
 Now that you have Python installed, let's create an isolated environment for a project.
 
-1.  **Navigate to Your Project Directory:** Create a directory for your new project (if it doesn't exist) and change into it.
+1.  **Navigate to Your Project Directory**: Create a directory for your new project (if it doesn't exist) and change into it.
 ```bash
 mkdir my-python-project
 cd my-python-project
 ```
-2.  **Create the Virtual Environment:** Use the `venv` module included with Python 3. It's standard practice to name the environment directory `.venv`. The leading dot (`.`) makes it a hidden directory on Linux/macOS.
+2.  **Create the Virtual Environment**: Use the `venv` module included with Python 3. It's standard practice to name the environment directory `.venv`. The leading dot (`.`) makes it a hidden directory on Linux/macOS.
 ```bash
 python3 -m venv .venv
 ```
     - This command creates a `.venv` directory containing a copy of the Python interpreter, the `pip` package manager, and other necessary files.
-3.  **Activate the Virtual Environment:** Before you can install packages into or run scripts using the virtual environment, you need to *activate* it.
+3.  **Activate the Virtual Environment**: Before you can install packages into or run scripts using the virtual environment, you need to *activate* it.
 ```bash
 source .venv/bin/activate
 ```
@@ -98,7 +105,7 @@ source .venv/bin/activate
 (.venv) user@hostname:~/my-python-project$
 ```
     * Now, commands like `python` and `pip` will refer to the versions inside the `.venv` directory, not the global ones.
-4.  **Install Packages:** With the environment active, you can install packages using `pip`. They will be installed *only* within this environment.
+4.  **Install Packages**: With the environment active, you can install packages using `pip`. They will be installed *only* within this environment.
 ```bash
 # Example: Install the 'requests' library
 pip install requests
@@ -107,7 +114,7 @@ pip install requests
 pip list
 ```
     - `pip list` will show `requests` and its dependencies installed, but only when the `.venv` is active.
-5.  **Work on Your Project:** Create your Python scripts (e.g., `main.py`) within the `my-python-project` directory. When you run `python main.py`, it will use the Python interpreter and libraries from the active `.venv`.
+5.  **Work on Your Project**: Create your Python scripts (e.g., `main.py`) within the `my-python-project` directory. When you run `python main.py`, it will use the Python interpreter and libraries from the active `.venv`.
 6.  **Deactivate the Virtual Environment:** When you're finished working on the project, you can deactivate the environment.
 ```bash
 deactivate

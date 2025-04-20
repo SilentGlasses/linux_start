@@ -2,7 +2,7 @@
 
 Linux provides powerful tools for monitoring, diagnosing, and troubleshooting network issues. Below, we explore essential commands and how to use them effectively.
 
-## 1. **Checking Connectivity**
+## Checking Connectivity
 
 === "ping"
     - **Usage**: Test connectivity to a host.
@@ -26,7 +26,7 @@ Linux provides powerful tools for monitoring, diagnosing, and troubleshooting ne
     - Troubleshooting Example:
         - Use `traceroute` to pinpoint where packets are getting dropped.
 
-## 2. **Viewing Network Configuration**
+## Viewing Network Configuration
 
 === "ip addr"
     - **Usage**: Display network interfaces and IP addresses.
@@ -43,7 +43,7 @@ Linux provides powerful tools for monitoring, diagnosing, and troubleshooting ne
       ifconfig
       ```
 
-## 3. **Examining Network Connections**
+## Examining Network Connections
 
 === "netstat"
     - **Usage**: Display network connections, routing tables, and more.
@@ -59,7 +59,7 @@ Linux provides powerful tools for monitoring, diagnosing, and troubleshooting ne
         - Use `ss` to identify open ports and active connections.
 
 
-## 4. **Querying DNS**
+## Querying DNS
 
 === "nslookup"
     - **Usage**: Query DNS for IP addresses.
