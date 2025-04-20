@@ -1,0 +1,1914 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A host of information for getting started with Linux.">
+      
+      
+      
+      
+        <link rel="prev" href="../interface/">
+      
+      
+        <link rel="next" href="../file_structure/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Fundamentals - Linux Start</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"IBM Plex Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/timeago.css">
+    
+      <link rel="stylesheet" href="../../sylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../sylesheets/admonitions.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Linux Start" class="md-header__button md-logo" aria-label="Linux Start" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9V320c0 28.4-10.8 57.7-22.3 80.8-6.5 13-13.9 25.8-22.5 37.6-3.2 4.3-4.1 9.9-2.3 15s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7.3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7-3.2-14.2-7.5-28.7-13.5-42v-24.6c0-30.2 10.2-58.7 27.9-81.5 12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5.8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1l280.6-101c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1c-7.6-2.7-15.6-4.1-23.7-4.1M128 408c0 35.3 86 72 192 72s192-36.7 192-72l-15.3-145.4L354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6l-142.2-51.4z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Linux Start
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Fundamentals
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../intro/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Onboarding
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../baseline/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Baseline
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../contribute/admonitions/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Contribute
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../blog/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Linux Start" class="md-nav__button md-logo" aria-label="Linux Start" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9V320c0 28.4-10.8 57.7-22.3 80.8-6.5 13-13.9 25.8-22.5 37.6-3.2 4.3-4.1 9.9-2.3 15s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7.3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7-3.2-14.2-7.5-28.7-13.5-42v-24.6c0-30.2 10.2-58.7 27.9-81.5 12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5.8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1l280.6-101c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1c-7.6-2.7-15.6-4.1-23.7-4.1M128 408c0 35.3 86 72 192 72s192-36.7 192-72l-15.3-145.4L354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6l-142.2-51.4z"/></svg>
+
+    </a>
+    Linux Start
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Onboarding
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Onboarding
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Intro to Linux
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../choosing_distros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Choosing a Distro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Interface
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fundamentals
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../file_structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Filestructure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../file_manipulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    File Manipulation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../filesystem_navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Filesystem Navigation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../baseline/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Baseline
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Baseline
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Setup
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/ssh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SSH
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Version Control
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Version Control
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../baseline/git/vc_git/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Git Intro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../baseline/git/git-core-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Git Concepts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../baseline/git/git-remotes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Git Remotes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../baseline/git/git-useful-commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Git Commands
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Development
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Development
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../baseline/dev/dev_index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Intro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../baseline/dev/ides/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Editors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../baseline/dev/debug/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Debugging
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../baseline/dev/build_tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Build Tools
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../baseline/dev/apis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    APIs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../baseline/dev/secure_coding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Secure Coding
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Networking
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Networking
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../baseline/networking/net_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Intro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../baseline/networking/networking_concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Concepts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../baseline/networking/networking_commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Commands
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../baseline/networking/ssh_secure_shell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SSH
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../baseline/networking/network_models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Network Models
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Contribute
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Contribute
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/admonitions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Admonitions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../blog/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Archive
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/archive/2025/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    April 2025
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/archive/2024/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    February 2024
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Fundamentals</h1>
+
+<p>Let's introduce you to some essential terminology in the Linux ecosystem:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">File System Hierarchy</label><label for="__tabbed_1_2">Package Management</label><label for="__tabbed_1_3">Command-Line Interface (CLI)</label><label for="__tabbed_1_4">Shell Prompt</label><label for="__tabbed_1_5">Environment Variables</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Understanding the Linux File System Hierarchy is crucial for navigating and managing files and directories effectively. It provides a standardized structure that allows users and applications to locate and access resources in a consistent manner. Some key directories include:</p>
+<ul>
+<li><code>/</code>: The root directory is the top-level directory in the file system hierarchy. It serves as the starting point for the entire file system. All other directories and files are located under the root directory.</li>
+<li><code>/bin</code>: This directory contains essential binary executable files (commands) accessible to all users. Common system utilities and commands like <code>ls</code>, <code>cp</code>, <code>mv</code>, and <code>rm</code> are stored here.</li>
+<li><code>/etc</code>: This directory contains system-wide configuration files. It includes various configuration files for services, network settings, software defaults, and administrative tasks. Examples include <code>/etc/passwd</code> for user account information and <code>/etc/resolv.conf</code> for DNS configuration.</li>
+<li><code>/home</code>: This directory contains individual user home directories. Each user typically has a subdirectory under <code>/home</code> with their username, such as <code>/home/user1</code>. Users have read and write permissions within their respective home directories.</li>
+<li><code>/var</code>: This directory contains variable data that changes during system operation. It includes log files (<code>/var/log</code>), spool files (<code>/var/spool</code>), temporary files (<code>/var/tmp</code>), and other files that may grow or change in size over time.</li>
+<li><code>/usr</code>: This directory holds user-related programs, libraries, and documentation. It is further divided into several subdirectories, including:<ul>
+<li><code>/usr/bin</code>: User binaries (executable files) that are not essential for system booting.</li>
+<li><code>/usr/lib</code>: Libraries used by programs in <code>/usr/bin</code>.</li>
+<li><code>/usr/include</code>: Header files used for software development.</li>
+<li><code>/usr/share</code>: Architecture-independent data shared across multiple packages.</li>
+<li><code>/usr/local</code>: Locally-installed programs and libraries specific to the system.</li>
+</ul>
+</li>
+<li><code>/tmp</code>: This directory is used for storing temporary files created by applications or users. Files in <code>/tmp</code> are typically deleted upon system reboot, but individual distributions may have specific policies for managing this directory.</li>
+<li><code>/dev</code>: This directory contains device files representing hardware devices connected to the system. These special files allow software to communicate with and control devices, such as hard drives (<code>/dev/sda</code>), USB devices (<code>/dev/usb</code>), or serial ports (<code>/dev/ttyS0</code>).</li>
+<li><code>/proc</code>: This directory is a virtual file system that provides information about running processes and system resources. It contains a hierarchy of numbered directories representing each process, and files within these directories provide details such as process status, memory usage, and system configuration.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>Package management is a crucial aspect of Linux systems that simplifies the installation, updating, and removal of software packages. It ensures that software installations are efficient, secure, and consistent across different distributions. Here are some key points to expand on the topic:</p>
+<ul>
+<li><strong>Package Formats</strong><ul>
+<li>Linux distributions use different package formats. Two common formats are:<ul>
+<li>Debian-based systems: These distributions, such as Debian, Ubuntu, and Linux Mint, use the Debian Package format (<code>.deb</code>). Packages include the software binaries, dependencies, and installation scripts.</li>
+<li>Red Hat-based systems: Distributions like Fedora, CentOS, and RHEL use the Red Hat Package Manager format (<code>.rpm</code>). RPM packages also contain software binaries, dependencies, and installation scripts.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Package Repositories</strong><ul>
+<li>Package repositories are online software repositories that store a collection of pre-compiled software packages. They serve as centralized sources for package discovery, download, and installation. Linux distributions provide default repositories, which contain a wide range of software packages maintained by the distribution's developers. Additionally, users can add third-party repositories to access additional software not available in the default repositories.</li>
+</ul>
+</li>
+<li>**Package Management Tools:<ul>
+<li>Linux distributions offer package management tools that facilitate package installation, updates, and removal. Some common package management tools are:<ul>
+<li>Debian-based systems: Advanced Package Tool (APT), which includes commands like <code>apt-get</code> and <code>apt</code>, as well as graphical front-ends like Synaptic and GNOME Software.</li>
+<li>Red Hat-based systems: Yellowdog Updater, Modified (YUM) and Dandified YUM (DNF) are commonly used. Commands include <code>yum</code> and <code>dnf</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Package Operations</strong><ul>
+<li>Package management tools provide a set of operations for managing software packages, including:<ul>
+<li>Installation: Packages can be installed from repositories using the package management tool. The tool resolves dependencies, fetching and installing all required packages.</li>
+<li>Upgrades: The package management tool can update installed packages to their latest available versions, ensuring that software remains secure and up to date.</li>
+</ul>
+</li>
+<li>Removal: Packages can be easily removed, which uninstalls the associated software and frees up disk space. The package management tool handles the removal of dependent packages that are no longer needed.</li>
+</ul>
+</li>
+<li><strong>Dependency Management</strong><ul>
+<li>Package management tools automatically handle software dependencies. When installing a package, the tool checks for required libraries and other packages and installs them if necessary. This ensures that all dependencies are satisfied and the software can run properly.</li>
+</ul>
+</li>
+<li><strong>Package Verification and Security</strong><ul>
+<li>Package management systems implement security measures to ensure the authenticity and integrity of packages. Packages are digitally signed using cryptographic keys, allowing the package management tool to verify their authenticity before installation. This helps protect against tampering and ensures that packages come from trusted sources.</li>
+</ul>
+</li>
+<li><strong>Package Building and Source Code</strong><ul>
+<li>Linux distributions often provide mechanisms for building packages from source code. This allows users to customize and compile software to suit their specific needs. Tools like <code>make</code>, <code>configure</code>, and <code>checkinstall</code> assist in the compilation and creation of packages from source code.</li>
+</ul>
+</li>
+</ul>
+<p>Package management simplifies software installation and maintenance on Linux systems. It provides a standardized and efficient way to manage software packages, ensuring a streamlined and secure experience for users. With package management tools, users can easily discover, install, update, and remove software, making Linux systems flexible and adaptable to changing needs.</p>
+</div>
+<div class="tabbed-block">
+<p>The Command-Line Interface (CLI) is a powerful and flexible tool in Linux that allows users to interact with the operating system and execute commands through a text-based interface. Here are some key aspects to expand on when it comes to the CLI:</p>
+<ul>
+<li><strong>Shell</strong><ul>
+<li>The shell is the program that interprets and executes commands entered by the user. The most common shell in Linux is the Bourne Again SHell (BASH). Other shells include Zsh, Fish, and Csh. Each shell has its own features, syntax, and customization options.</li>
+</ul>
+</li>
+<li><strong>Command Syntax</strong><ul>
+<li>Commands in the CLI have a specific syntax. Typically, a command consists of the command name followed by options and arguments. Options (also known as flags or switches) modify the behavior of the command, while arguments provide inputs or specify targets for the command to act upon. Commands can be combined together using pipes (<code>|</code>) or redirected using input/output redirection operators (<code>&gt;</code>, <code>&gt;&gt;</code>, <code>&lt;</code>, <code>|</code>).</li>
+</ul>
+</li>
+<li><strong>Built-in Commands and External Programs</strong><ul>
+<li>The CLI provides both built-in commands and external programs. Built-in commands are part of the shell itself and are executed directly without the need for a separate program. Examples of built-in commands include <code>cd</code> (change directory), <code>echo</code> (print text), and <code>alias</code> (create command shortcuts). External programs are standalone executables installed on the system and can be invoked from the command line.</li>
+</ul>
+</li>
+<li><strong>Path and Environment Variables</strong><ul>
+<li>The CLI uses the concept of paths and environment variables. The PATH variable is a list of directories that the system searches for executable files. When a command is entered, the shell looks for the executable in the directories listed in the PATH variable. Environment variables store information that can be accessed by programs and scripts. Common environment variables include <code>HOME</code> (user's home directory), <code>PATH</code> (executable search path), and <code>USER</code> (current username).</li>
+</ul>
+</li>
+<li><strong>Tab Completion</strong><ul>
+<li>Tab completion is a time-saving feature in the CLI. By pressing the Tab key, the shell automatically completes command names, file names, and directories based on what you have typed. It helps avoid typing errors and speeds up command entry.</li>
+</ul>
+</li>
+<li><strong>Command History and Editing</strong><ul>
+<li>The CLI keeps a history of previously entered commands. You can navigate through the command history using the arrow keys or use specific shortcuts to recall, modify, or reuse previous commands. Editors such as Emacs and Vi can be used for more advanced command-line editing.</li>
+</ul>
+</li>
+<li><strong>Shell Scripting</strong><ul>
+<li>The CLI is widely used for shell scripting, which involves writing scripts that automate tasks and combine multiple commands into a single file. Shell scripts can be executed as a series of commands or as standalone programs.</li>
+</ul>
+</li>
+<li><strong>System Administration and Automation</strong><ul>
+<li>The CLI is particularly useful for system administration tasks and automation. It provides powerful tools for managing files, configuring network settings, installing software, monitoring system performance, and much more. Many system administration tasks can be scripted and executed from the command line, making it efficient for managing and maintaining Linux systems.</li>
+</ul>
+</li>
+</ul>
+<p>The command-line interface offers extensive control and flexibility to Linux users. It allows for precise system control, efficient task execution, and the ability to automate complex operations. Becoming familiar with the CLI enables users to take full advantage of Linux's capabilities and perform a wide range of tasks efficiently.</p>
+</div>
+<div class="tabbed-block">
+<p>The shell prompt is a textual indicator displayed by the command-line interface (CLI) to signal that the shell is ready to receive user commands. It provides information about the system's current state and can be customized to meet individual preferences. Here are some aspects to expand on when discussing the shell prompt:</p>
+<ul>
+<li><strong>Structure of the Shell Prompt</strong><ul>
+<li>The shell prompt typically appears as a line of text on the command line, usually at the beginning of each new line. It consists of several components, which may include:<ul>
+<li>Username: The username of the currently logged-in user.</li>
+<li>Hostname: The name of the computer or system on which the shell is running.</li>
+<li>Current Working Directory: The path of the directory in which the user is currently located.</li>
+<li>Privilege Level: A symbol (e.g., <code>$</code> or <code>#</code>) that indicates the user's privilege level. A regular user typically has a <code>$</code> prompt, while the root user (superuser) has a <code>#</code> prompt.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Customization Options</strong><ul>
+<li>The shell prompt can be customized to suit personal preferences or display additional information. Users can modify the prompt's appearance, add colors or special characters, and include additional information relevant to their workflow. Customization is typically achieved by configuring environment variables, such as <code>PS1</code> (for BASH) or <code>PROMPT</code> (for Zsh), which control the prompt's format and content.</li>
+</ul>
+</li>
+<li><strong>Displaying System Information</strong><ul>
+<li>The shell prompt can display various system-related information to provide context and aid in navigation. For example:<ul>
+<li>Current Working Directory: Showing the full or abbreviated path of the current working directory helps users keep track of their location in the file system.</li>
+<li>Hostname: Displaying the hostname can be useful in a networked environment where multiple systems are involved.</li>
+<li>Git Branch: If the current directory is part of a Git repository, the prompt can show the active branch name or indicate the repository status.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Dynamic Prompts</strong><ul>
+<li>Some advanced shell prompts can be dynamically updated to provide real-time information. For instance:<ul>
+<li>Time and Date: The prompt can display the current time and date, keeping users informed without the need for executing additional commands.</li>
+<li>Command Execution Status: After running a command, the prompt can display the exit status of the command, indicating success (0) or failure (non-zero).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Prompt Themes and Preconfigured Prompts</strong><ul>
+<li>Users can choose from a variety of preconfigured prompt themes or templates to change the prompt's appearance. These themes often include color schemes, special symbols, and additional information, making the prompt visually appealing and informative. Popular shell prompt customization frameworks include Powerline, Oh My Zsh, and Starship.</li>
+</ul>
+</li>
+<li><strong>Accessibility Considerations</strong><ul>
+<li>Shell prompt customization can be valuable for users with visual impairments or color blindness. Choosing color schemes with sufficient contrast or including audible indicators in the prompt can enhance accessibility.</li>
+</ul>
+</li>
+</ul>
+<p>The shell prompt is more than just a visual element; it provides users with contextual information, helps navigate the file system, and can be tailored to individual preferences. By customizing the shell prompt, users can create a personalized and informative command-line experience that suits their workflow and enhances productivity.</p>
+</div>
+<div class="tabbed-block">
+<p>Environment variables are dynamic values that are part of the environment in which a process runs. They store information that can be accessed by programs, scripts, and the operating system itself. Here are some aspects to expand on when discussing environment variables:</p>
+<ul>
+<li><strong>Purpose and Function</strong><ul>
+<li>Environment variables serve various purposes, including:<ul>
+<li>Configuration: Environment variables store configuration settings that affect the behavior of software and applications. For example, the <code>PATH</code> variable specifies the directories to search for executable files.</li>
+<li>System Information: Environment variables provide information about the system, such as the current user (<code>USER</code>), the home directory (<code>HOME</code>), or the operating system (<code>OS</code>).</li>
+<li>Interprocess Communication: Environment variables enable communication between processes by sharing data. Processes can read environment variables to access shared values or configure their behavior based on specific variables.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>System and User Variables</strong>
+Environment variables can be system-wide or user-specific. System variables are set for the entire operating system and are available to all users. User variables are specific to each user and may override system variables with the same name.</li>
+<li><strong>Commonly Used Environment Variables</strong><ul>
+<li>There are numerous environment variables available in Linux systems. Here are some commonly used ones:<ul>
+<li><code>PATH</code>: Specifies the directories to search for executable files when a command is entered.</li>
+<li><code>HOME</code>: Indicates the user's home directory, where their personal files and settings are stored.</li>
+<li><code>USER</code> and USERNAME: Identify the currently logged-in user.</li>
+<li><code>SHELL</code>: Stores the path to the user's default shell.</li>
+<li><code>LANG</code> and <code>LC_*</code>: Control the language and localization settings for the system.</li>
+<li><code>PS1</code>: Defines the prompt string displayed by the shell prompt.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Setting and Modifying Environment Variables</strong><ul>
+<li>Environment variables can be set or modified using different methods, such as:<ul>
+<li>Shell Configuration Files: Environment variables can be defined in shell configuration files like <code>.zshrc</code>, <code>.bashrc</code> or <code>.profile</code>. Changes made to these files require a new shell session or re-sourcing the file for the changes to take effect.</li>
+<li>Command-Line Assignment: Variables can be set temporarily by assigning values directly in the command line. For example, <code>export VARIABLE=value</code> sets the value of the variable for the current session.</li>
+<li>Startup Scripts: System-wide environment variables can be set in startup scripts executed during boot, such as <code>/etc/profile</code> or scripts in <code>/etc/profile.d/</code> directory.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Viewing Environment Variables</strong><ul>
+<li>To view the current environment variables, the <code>env</code> command or <code>printenv</code> command can be used. These commands display a list of all environment variables and their values.</li>
+</ul>
+</li>
+<li><strong>Using Environment Variables in Scripts</strong><ul>
+<li>Environment variables are often used in scripts to access configuration values, control program behavior, or store temporary data. Scripts can read environment variables using the <code>$VARIABLE_NAME</code> syntax in shells like BASH.</li>
+</ul>
+</li>
+<li><strong>Exporting Variables</strong><ul>
+<li>Variables that need to be available to child processes need to be exported using the export command. This ensures that the variable is inherited by subsequent processes.</li>
+</ul>
+</li>
+</ul>
+<p>Environment variables are a powerful mechanism in Linux that enable flexible configuration, interprocess communication, and customization. Understanding how to set, modify, and utilize environment variables can enhance the functionality and flexibility of the system and its applications.</p>
+</div>
+</div>
+</div>
+<p>Understanding these fundamental concepts will help you navigate the Linux file system, manage software packages, and interact with the command-line interface effectively. As you gain more experience, you'll discover additional terminology and commands specific to your chosen distribution and interests.</p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="April 20, 2025 00:57:01"><span class="timeago" datetime="2025-04-20T00:57:01+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="April 20, 2025 00:57:01">2025-04-20</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="April 20, 2025 00:57:01"><span class="timeago" datetime="2025-04-20T00:57:01+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="April 20, 2025 00:57:01">2025-04-20</span>
+  </span>
+
+    
+    
+      
+  
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Contributors">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"/></svg>
+      
+    </span>
+    <nav>
+      
+        <a href="mailto:silentglasses@proton.me">SilentGlasses</a>
+    </nav>
+  </span>
+
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 - Present
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.code.select", "content.tabs.link", "navigation.expand", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.instant.preview", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../js/timeago.min.js"></script>
+      
+        <script src="../../js/timeago_mkdocs_material.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
