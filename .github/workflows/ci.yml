@@ -1,4 +1,4 @@
-# MacStart Deploy
+# Deploy Site
 name: ci
 on:
   push:
@@ -12,6 +12,8 @@ jobs:
     steps:
       # Step 1: Checkout the repository
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch the full Git history
 
       # Step 2: Configure Git credentials
       - name: Configure Git Credentials
