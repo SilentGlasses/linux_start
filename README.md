@@ -8,7 +8,9 @@
 ╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝    ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝
 ```
 
-# 🐧 Getting Started with Linux
+<img src="https://raw.githubusercontent.com/SilentGlasses/linux_start/bf2c3689afe069bb5832f8fd9d49836bd7f8e37e/docs/assets/LinuxStart.svg" width="120" height="120" alt="Linux Start Logo">
+
+# Getting Started with Linux
 
 Welcome to the "Getting Started with Linux" repository! This is a beginner-friendly guide designed to help you explore Linux step by step and other topics like Version Control, Secure Coding, etc.
 
