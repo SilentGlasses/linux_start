@@ -11,8 +11,10 @@
       
       
       
-        <link rel="prev" href="../2025/">
+        <link rel="prev" href="../git_core_concepts/">
       
+      
+        <link rel="next" href="../git_useful_commands/">
       
       
       <link rel="icon" href="../../../assets/LinuxStart.svg">
@@ -20,7 +22,7 @@
     
     
       
-        <title>February 2024 - Linux Start</title>
+        <title>Git Remotes - Linux Start</title>
       
     
     
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#february-2024" class="md-skip">
+        <a href="#working-with-remotes-in-git" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              February 2024
+              Git Remotes
             
           </span>
         </div>
@@ -224,11 +226,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../baseline/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
   
@@ -268,13 +272,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
           
   
   
@@ -579,6 +581,8 @@
       
   
   
+    
+  
   
   
     
@@ -600,20 +604,21 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../baseline/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   
@@ -626,13 +631,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Baseline
@@ -748,8 +753,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -774,13 +781,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -796,7 +801,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             Version Control
@@ -810,7 +815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../baseline/git/git_introduction/" class="md-nav__link">
+      <a href="../git_introduction/" class="md-nav__link">
         
   
   
@@ -833,7 +838,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../baseline/git/git_core_concepts/" class="md-nav__link">
+      <a href="../git_core_concepts/" class="md-nav__link">
         
   
   
@@ -853,10 +858,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../baseline/git/git_remotes/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Git Remotes
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -867,6 +894,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-remote-repositories" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are Remote Repositories?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managing-remotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Remotes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-changes-from-a-remote-fetching-and-pulling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Changes from a Remote: Fetching and Pulling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sending-changes-to-a-remote-pushing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sending Changes to a Remote: Pushing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloning-getting-started-with-a-remote-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloning: Getting Started with a Remote Project
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collaboration-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Collaboration Workflows
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -879,7 +980,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../baseline/git/git_useful_commands/" class="md-nav__link">
+      <a href="../git_useful_commands/" class="md-nav__link">
         
   
   
@@ -902,7 +1003,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../baseline/git/github_overview/" class="md-nav__link">
+      <a href="../github_overview/" class="md-nav__link">
         
   
   
@@ -925,7 +1026,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../baseline/git/git_practice_and_tests/" class="md-nav__link">
+      <a href="../git_practice_and_tests/" class="md-nav__link">
         
   
   
@@ -948,7 +1049,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../baseline/git/git_troubleshooting/" class="md-nav__link">
+      <a href="../git_troubleshooting/" class="md-nav__link">
         
   
   
@@ -1036,7 +1137,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../baseline/dev/dev_index/" class="md-nav__link">
+      <a href="../../dev/dev_index/" class="md-nav__link">
         
   
   
@@ -1059,7 +1160,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../baseline/dev/ides/" class="md-nav__link">
+      <a href="../../dev/ides/" class="md-nav__link">
         
   
   
@@ -1082,7 +1183,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../baseline/dev/debug/" class="md-nav__link">
+      <a href="../../dev/debug/" class="md-nav__link">
         
   
   
@@ -1105,7 +1206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../baseline/dev/build_tools/" class="md-nav__link">
+      <a href="../../dev/build_tools/" class="md-nav__link">
         
   
   
@@ -1128,7 +1229,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../baseline/dev/apis/" class="md-nav__link">
+      <a href="../../dev/apis/" class="md-nav__link">
         
   
   
@@ -1151,7 +1252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../baseline/dev/secure_coding/" class="md-nav__link">
+      <a href="../../dev/secure_coding/" class="md-nav__link">
         
   
   
@@ -1237,7 +1338,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../baseline/networking/net_intro/" class="md-nav__link">
+      <a href="../../networking/net_intro/" class="md-nav__link">
         
   
   
@@ -1260,7 +1361,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../baseline/networking/networking_concepts/" class="md-nav__link">
+      <a href="../../networking/networking_concepts/" class="md-nav__link">
         
   
   
@@ -1283,7 +1384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../baseline/networking/networking_commands/" class="md-nav__link">
+      <a href="../../networking/networking_commands/" class="md-nav__link">
         
   
   
@@ -1306,7 +1407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../baseline/networking/ssh_secure_shell/" class="md-nav__link">
+      <a href="../../networking/ssh_secure_shell/" class="md-nav__link">
         
   
   
@@ -1329,7 +1430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../baseline/networking/network_models/" class="md-nav__link">
+      <a href="../../networking/network_models/" class="md-nav__link">
         
   
   
@@ -1441,8 +1542,6 @@
       
   
   
-    
-  
   
   
     
@@ -1458,21 +1557,20 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../" class="md-nav__link ">
+            <a href="../../../blog/" class="md-nav__link ">
               
   
   
@@ -1485,13 +1583,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Blog
@@ -1504,10 +1602,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -1522,11 +1618,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_2" >
         
           
           <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
@@ -1542,7 +1640,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_2">
             <span class="md-nav__icon md-icon"></span>
             Archive
@@ -1558,7 +1656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../2025/" class="md-nav__link">
+      <a href="../../../blog/archive/2025/" class="md-nav__link">
         
   
   
@@ -1578,23 +1676,12 @@
                 
   
   
-    
-  
   
     
-      
-    
   
   
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
         
   
   
@@ -1605,7 +1692,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1646,6 +1732,68 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-remote-repositories" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are Remote Repositories?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managing-remotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Remotes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-changes-from-a-remote-fetching-and-pulling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Changes from a Remote: Fetching and Pulling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sending-changes-to-a-remote-pushing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sending Changes to a Remote: Pushing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloning-getting-started-with-a-remote-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloning: Getting Started with a Remote Project
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collaboration-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Collaboration Workflows
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1653,69 +1801,175 @@
             
           
           
-  <div class="md-content" data-md-component="content">
-    <div class="md-content__inner">
-      <header class="md-typeset">
-        <h1 id="february-2024">February 2024</h1>
-      </header>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://github.com/silentglasses.png" alt="SilentGlasses">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-02-26 00:00:00+00:00">February 26, 2024</time></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              2 min read
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="embrace-the-penguin"><a class="toclink" href="../../2024/02/26/embrace-the-penguin-/">Embrace the Penguin 🐧💻</a></h2>
-<p>Greeting fellow open-source adventurers and Linux enthusiasts! Welcome to the world where the Penguin reigns supreme. Here you will find topics ranging from traversing the land of open-source, command-line mastery, customization and general topics that unfold within the world of Linux.</p>
-<p>Here's to embracing the penguin, and the exciting Linux journey that lies ahead!</p>
-
-    
-      <nav class="md-post__action">
-        <a href="../../2024/02/26/embrace-the-penguin-/">
-          Continue reading
-        </a>
-      </nav>
-    
-  </div>
-</article>
-      
-      
-        
-          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
 
 
 
-<nav class="md-pagination">
+<h1 id="working-with-remotes-in-git">Working with Remotes in Git</h1>
+<p>So far, we've mostly focused on using Git locally. However, a major strength of Git is its ability to facilitate collaboration through <strong>remote repositories</strong>. This page covers how to interact with these remotes.</p>
+<p><strong>Prerequisites:</strong> Understanding of Git basics and core concepts like branching and merging (<a href="../git_introduction/">Introduction</a>, <a href="../git_core_concepts/">Core Concepts</a>).</p>
+<h2 id="what-are-remote-repositories">What are Remote Repositories?</h2>
+<p>A remote repository (or "remote") is simply a version of your project hosted somewhere else, typically on the internet or a network server. You can have multiple remotes, but often you'll have one primary remote that acts as a central point for collaboration.</p>
+<ul>
+<li><strong>Purpose</strong>:<ul>
+<li><strong>Collaboration</strong>: Allows multiple developers to share code and contribute to the same project.</li>
+<li><strong>Backup</strong>: Provides an offsite copy of your project history.</li>
+<li><strong>Integration</strong>: Platforms hosting remotes often provide additional tools (issue tracking, CI/CD, code review).</li>
+</ul>
+</li>
+<li><strong>Hosting Platforms</strong>: Popular platforms for hosting remote Git repositories include GitHub, GitLab, and Bitbucket.</li>
+</ul>
+<h2 id="managing-remotes">Managing Remotes</h2>
+<p>You interact with remotes using the <code>git remote</code> command.</p>
+<ul>
+<li><strong>Adding a Remote</strong>: Connect your local repository to a remote one.
+    <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><span class="c1"># Syntax: git remote add &lt;shortname&gt; &lt;url&gt;</span>
+</span><span id="__span-0-2">git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span><span class="o">[</span>https://github.com/your-username/your-repo.git<span class="o">](</span>https://github.com/your-username/your-repo.git<span class="o">)</span>
+</span></code></pre></div><ul>
+<li><code>&lt;shortname&gt;</code>: A local alias for the remote URL (conventionally <code>origin</code> for the primary remote).</li>
+<li><code>&lt;url&gt;</code>: The URL of the remote repository (usually found on the hosting platform).</li>
+</ul>
+</li>
+<li><strong>Viewing Remotes</strong>: See which remotes are configured.
+    <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1">git<span class="w"> </span>remote<span class="w"> </span>-v
+</span></code></pre></div>
+    This shows the shortname and URL for fetch and push operations.</li>
+<li><strong>Renaming a Remote</strong>:
+    <div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1">git<span class="w"> </span>remote<span class="w"> </span>rename<span class="w"> </span>&lt;old-name&gt;<span class="w"> </span>&lt;new-name&gt;
+</span></code></pre></div></li>
+<li><strong>Removing a Remote</strong>:
+    <div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1">git<span class="w"> </span>remote<span class="w"> </span>remove<span class="w"> </span>&lt;shortname&gt;
+</span></code></pre></div></li>
+</ul>
+<h2 id="getting-changes-from-a-remote-fetching-and-pulling">Getting Changes <em>from</em> a Remote: Fetching and Pulling</h2>
+<p>To update your local repository with changes from a remote:</p>
+<ul>
+<li><strong>`git fetch &lt;remote-name</strong>:<ul>
+<li>Downloads commits and objects from the remote repository that you don't have locally.</li>
+<li>Updates your <em>remote-tracking branches</em> (e.g., <code>origin/main</code>). These are local pointers to the state of the branches on the remote <em>the last time you fetched</em>.</li>
+<li><strong>Crucially, <code>git fetch</code> does NOT modify your local working directory or your local branches (like <code>main</code>).</strong> It just gets the data.</li>
+<li>Useful to see what has changed on the remote before deciding how to integrate it.</li>
+</ul>
+</li>
+<li><strong><code>git pull &lt;remote-name&gt; &lt;branch-name&gt;</code></strong>:<ul>
+<li>Essentially performs a <code>git fetch</code> followed by a <code>git merge</code> (or <code>git rebase</code>, if configured).</li>
+<li>It fetches changes from the specified remote branch and immediately tries to integrate them into your <em>current local</em> branch.</li>
+<li>Example: If you are on your local <code>main</code> branch, <code>git pull origin main</code> fetches <code>origin/main</code> and merges it into your local <code>main</code>.</li>
+<li>This is a common way to update your local branch, but be aware it triggers an immediate merge (which might result in conflicts).</li>
+</ul>
+</li>
+</ul>
+<h2 id="sending-changes-to-a-remote-pushing">Sending Changes <em>to</em> a Remote: Pushing</h2>
+<p>Once you have committed changes locally, you can share them by pushing them to a remote.</p>
+<ul>
+<li><strong><code>git push &lt;remote-name&gt; &lt;local-branch-name&gt;:&lt;remote-branch-name&gt;</code>:</strong><ul>
+<li>Uploads your local branch commits to the specified remote branch.</li>
+<li>Often simplified to <code>git push &lt;remote-name&gt; &lt;branch-name&gt;</code> if the local and remote branch names are the same.</li>
+<li>Example: <code>git push origin main</code> pushes your local <code>main</code> branch to the <code>main</code> branch on the <code>origin</code> remote.</li>
+</ul>
+</li>
+<li><strong>Setting Upstream</strong>: The first time you push a new local branch, you might use the <code>-u</code> flag:
+    <div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1">git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>feature-branch
+</span></code></pre></div>
+    This sets up a <em>tracking relationship</em> between your local <code>feature-branch</code> and <code>origin/feature-branch</code>. After this, you can often just run <code>git push</code> (and <code>git pull</code>) from that branch without specifying the remote and branch names.</li>
+<li><strong>Push Rejection</strong>: Git will prevent you from pushing if the remote branch has commits that you don't have locally (i.e., the histories have diverged). You need to <code>pull</code> (or <code>Workspace</code> and <code>merge</code>/<code>rebase</code>) the remote changes first, integrate them with your local changes, and <em>then</em> push.</li>
+</ul>
+<h2 id="cloning-getting-started-with-a-remote-project">Cloning: Getting Started with a Remote Project</h2>
+<p>If a project already exists on a remote server, the easiest way to get a local copy is to clone it.</p>
+<ul>
+<li><strong><code>git clone &lt;repository-url&gt;</code></strong>:<ul>
+<li>Creates a full copy of the remote repository on your local machine.</li>
+<li>Automatically sets up the original URL as the <code>origin</code> remote.</li>
+<li>Checks out the default branch (usually <code>main</code> or <code>master</code>).</li>
+</ul>
+</li>
+</ul>
+<h2 id="collaboration-workflows">Collaboration Workflows</h2>
+<p>Remotes enable various team workflows. Two common patterns are:</p>
+<ul>
+<li><strong>Feature Branch Workflow</strong>:<ol>
+<li>Create a new branch locally for each feature or bug fix.</li>
+<li>Develop and commit changes on that branch.</li>
+<li>Push the feature branch to the remote repository.</li>
+<li>Open a <strong>Pull Request</strong> (PR) or <strong>Merge Request</strong> (MR) on the hosting platform (GitHub/GitLab). This is a formal request to merge your feature branch into the main branch, allowing for code review and discussion before merging.</li>
+<li>Once approved, the branch is merged (often via the web interface).</li>
+</ol>
+</li>
+<li><strong>Forking Workflow</strong>: (Common in open-source)<ol>
+<li>Create a personal copy (<strong>fork</strong>) of the main repository on the hosting platform.</li>
+<li><strong>Clone</strong> <em>your fork</em> locally.</li>
+<li>Create feature branches, commit, and push <em>to your fork</em>.</li>
+<li>Open a Pull Request from your fork's branch back to the <em>original</em> repository.</li>
+</ol>
+</li>
+</ul>
+<p>Interacting with remotes is fundamental for collaborative development and backing up your work. Mastering <code>Workspace</code>, <code>pull</code>, <code>push</code>, and understanding workflows like Pull Requests is essential.</p>
+
+
+
+
+
+
+
   
-</nav>
-        
-      
-    </div>
-  </div>
+    
+  
+  
+    
+  
 
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="April 23, 2025 19:03:56"><span class="timeago" datetime="2025-04-23T19:03:56+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="April 23, 2025 19:03:56">2025-04-23</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="April 19, 2025 05:32:38"><span class="timeago" datetime="2025-04-19T05:32:38+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="April 19, 2025 05:32:38">2025-04-19</span>
+  </span>
+
+    
+    
+      
+  
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Contributors">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"/></svg>
+      
+    </span>
+    <nav>
+      
+        <a href="mailto:silentglasses@proton.me">Silent Glasses</a>
+    </nav>
+  </span>
+
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
           
   <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
 
