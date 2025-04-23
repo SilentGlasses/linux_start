@@ -2,7 +2,7 @@
 
 This page builds upon the basic introduction to Git, exploring the fundamental concepts that give Git its power and flexibility, particularly branching and merging.
 
-**Prerequisites:** Understanding of basic Git concepts (Repository, Commit, Working Directory, Basic Workflow) from the [Introduction](./git-introduction.md).
+**Prerequisites:** Understanding of basic Git concepts (Repository, Commit, Working Directory, Basic Workflow) from the [Introduction](git_introduction.md).
 
 ## The Staging Area (Index) Revisited
 

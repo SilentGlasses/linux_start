@@ -2,7 +2,7 @@
 
 So far, we've mostly focused on using Git locally. However, a major strength of Git is its ability to facilitate collaboration through **remote repositories**. This page covers how to interact with these remotes.
 
-**Prerequisites:** Understanding of Git basics and core concepts like branching and merging ([Introduction](./git-introduction.md), [Core Concepts](./git-core-concepts.md)).
+**Prerequisites:** Understanding of Git basics and core concepts like branching and merging ([Introduction](git_introduction.md), [Core Concepts](git_core_concepts.md)).
 
 ## What are Remote Repositories?
 

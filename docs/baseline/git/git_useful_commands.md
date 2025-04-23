@@ -2,9 +2,9 @@
 
 You've learned the basic Git workflow, core concepts like branching/merging, and how to work with remotes. This page introduces some additional commands and options that help you inspect history, manage changes, and troubleshoot more effectively.
 
-**Prerequisites:** Understanding of Git basics, core concepts, and remotes ([Introduction](./git-introduction.md), [Core Concepts](./git-core-concepts.md), [Remotes](./git-remotes.md)).
+**Prerequisites:** Understanding of Git basics, core concepts, and remotes ([Introduction](git_introduction.md), [Core Concepts](git_core_concepts.md), [Remotes](git_remotes.md)).
 
-## Inspecting History: `git log`
+## Inspecting History
 
 The `git log` command is your window into the project's history. It has many powerful options:
 
@@ -22,7 +22,7 @@ The `git log` command is your window into the project's history. It has many pow
     - `git log <branch-or-commit>..<branch-or-commit>`: Show commits reachable from the second reference but not the first.
     - `git log -- <path/to/file>`: Show commits that affected a specific file or directory.
 
-## Comparing Changes: `git diff`
+## Comparing Changes
 
 The `git diff` command shows differences between various states in your repository.
 
@@ -32,7 +32,7 @@ The `git diff` command shows differences between various states in your reposito
 - **Between Branches**: `git diff <branch1>..<branch2>` shows the differences between the tips of two branches.
 - **Ignoring Whitespace**: Add `-w` or `--ignore-all-space` to ignore whitespace changes.
 
-## Temporarily Saving Changes: `git stash`
+## Temporarily Saving Changes
 
 Sometimes you need to quickly switch branches, but you have uncommitted changes in your working directory or staging area that you're not ready to commit yet. `git stash` is perfect for this.
 
@@ -45,7 +45,7 @@ Sometimes you need to quickly switch branches, but you have uncommitted changes 
     - `git stash drop <stash-id>`: Delete a specific stash from the list.
     - `git stash clear`: Delete *all* stashes.
 
-## Finding Faulty Commits: `git bisect`
+## Finding Faulty Commits
 
 If you discover a bug but don't know which commit introduced it, `git bisect` can help you find it quickly using a binary search through your commit history.
 
@@ -59,7 +59,7 @@ If you discover a bug but don't know which commit introduced it, `git bisect` ca
     6.  Repeat steps 4 & 5 until Git tells you which commit is the first bad one.
     7.  `git bisect reset`: End the bisect session and return to your original branch/commit.
 
-## Cleaning Up: `git clean` (Use with Extreme Caution!)
+## Cleaning Up
 
 This command removes untracked files from your working directory. Useful for getting a truly clean state, but **dangerous because it can permanently delete files not tracked by Git.**
 
