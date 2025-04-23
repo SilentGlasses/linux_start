@@ -22,10 +22,13 @@ nav:
         - SSH: 'setup/ssh.md'
         - Python: 'setup/python.md'
     - Version Control:
-      - Git Intro: 'baseline/git/vc_git.md'
-      - Git Concepts: 'baseline/git/git-core-concepts.md'
-      - Git Remotes: 'baseline/git/git-remotes.md'
-      - Git Commands: 'baseline/git/git-useful-commands.md'
+        - Git Intro: 'baseline/git/git_introduction.md'
+        - Git Core Concepts: 'baseline/git/git_core_concepts.md'
+        - Git Remotes: 'baseline/git/git_remotes.md'
+        - Git Useful Commands: 'baseline/git/git_useful_commands.md'
+        - GitHub Overview: 'baseline/git/github_overview.md'
+        - Git Practice & Self-Test: 'baseline/git/git_practice_and_tests.md'
+        - Git Troubleshooting: 'baseline/git/git_troubleshooting.md'
     - Development:
       - Intro: 'baseline/dev/dev_index.md'
       - Editors: 'baseline/dev/ides.md'
@@ -50,6 +53,8 @@ theme:
   name: material
   language: en
   custom_dir: overrides
+  logo: assets/LinuxStart.svg
+  favicon: assets/LinuxStart.svg
   features:
     - content.action.view # Allows for direct viewing of code
     - content.code.annotate
@@ -71,14 +76,11 @@ theme:
   palette:
     primary: 'white'
     accent: 'deep orange'
-    toggle:
-        icon: material/toggle-switch-off
-        name: Switch to system preference
+
   font:
     text: 'IBM Plex Sans'
     code: 'JetBrains Mono'
   icon:
-    logo: fontawesome/solid/graduation-cap
     repo: fontawesome/brands/github
 
 extra_css:
