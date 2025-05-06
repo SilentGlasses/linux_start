@@ -49,7 +49,7 @@ SSH is a secure protocol for remotely managing Linux systems. It allows you to e
     ```bash
     ssh-keygen -t rsa
     ```
-=== "Copy Public Key to Remote Server":
+=== "Copy Public Key to Remote Server"
     - **Command**:
     ```bash
     ssh-copy-id user@remote-host
