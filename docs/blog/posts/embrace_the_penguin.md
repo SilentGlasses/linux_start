@@ -1,4 +1,5 @@
 ---
+title: Embrace the Penguin
 authors:
   - silentglasses
 date: 2024-02-26

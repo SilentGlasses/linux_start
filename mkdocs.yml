@@ -19,6 +19,7 @@ nav:
   - Baseline:
     - 'baseline/index.md'
     - Setup:
+        - Computer: 'setup/computer_setup.md'
         - SSH: 'setup/ssh.md'
         - Python: 'setup/python.md'
     - Version Control:
@@ -56,23 +57,22 @@ theme:
   logo: assets/LinuxStart.svg
   favicon: assets/LinuxStart.svg
   features:
-    - content.action.view # Allows for direct viewing of code
-    - content.code.annotate
-    - content.code.copy
-    - content.code.select
-    - content.tabs.link
-    - navigation.expand
-    - navigation.indexes
-    - navigation.instant
-    - navigation.instant.progress
-    - navigation.instant.preview
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.top
-    - search.highlight
-    - search.share
-    - search.suggest
-    - toc.follow
+    - content.action.view # Adds a “view source” button to code blocks.
+    - content.code.annotate # Enables numbered annotations in code blocks.
+    - content.code.copy # Adds a copy button to code blocks.
+    - content.code.select # Allows selecting the entire code block with one click.
+    - content.tabs.link # Deep-links to individual content tabs.
+    - navigation.indexes # Lets index pages (like index.md) show in navigation menus.
+    - navigation.instant # Enables fast, AJAX-style page loads.
+    - navigation.instant.progress # Shows a loading bar during instant navigation.
+    - navigation.instant.preview # Preloads linked pages for faster navigation.
+    - navigation.tabs # Converts top-level sections into horizontal tabs.
+    - navigation.tabs.sticky # Keeps tabs visible as you scroll.
+    - navigation.top # Adds a “back to top” button.
+    - search.highlight # Highlights search terms on result pages.
+    - search.share # Adds a shareable link for search results.
+    - search.suggest # Offers live search suggestions.
+    - toc.follow # Highlights the current section in the table of contents.
   palette:
     primary: 'white'
     accent: 'deep orange'
