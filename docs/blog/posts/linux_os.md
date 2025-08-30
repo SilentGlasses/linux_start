@@ -25,7 +25,7 @@ Linux draws heavily from the Unix tradition and the do-one-thing-well philosophy
 - **Modularity**: Small tools that can be combined in endless ways.
 - **Transparency**: You can inspect, modify, and understand your system.
 - **Control**: You’re not locked into defaults or forced updates.
-- **Empowermen**t: You can break your system, and that’s often how you learn.
+- **Empowerment**: You can break your system, and that’s often how you learn.
 
 It's not about having flashy GUIs or automation at every turn (though those exist); it's about understanding your computer and being in the driver’s seat.
 
