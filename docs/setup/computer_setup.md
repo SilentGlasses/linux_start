@@ -14,6 +14,16 @@ Always start with a full system update.
     ```bash
     sudo dnf update -y
     ```
+## Prerequisites
+
+=== "Debian-based"
+    ```
+    sudo apt install vim
+    ```
+=== "Fedora-based"
+    ```
+    sudo dnf install vim
+    ```
 
 ## Install Homebrew (Linuxbrew)
 
@@ -32,6 +42,8 @@ Install dependencies:
     sudo apt install build-essential procps curl file git -y
     ```
 === "Fedora-based"
+    **This currently does not work, looking into it.**
+    
     ```bash
     sudo dnf groupinstall "Development Tools" -y && sudo dnf install procps-ng curl file git -y
     ```
@@ -76,6 +88,31 @@ A framework for managing your Zsh configuration.
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+### Plugins
+
+- zsh-syntax-highlighting
+```
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+- zsh-autosuggestions
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+- zsh-completions
+```
+git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
+```
+- Add the following to you `~/.zshrc
+```
+plugins=(
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+)
+
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+autoload -U compinit && compinit
 ```
 
 ## Install Powerlevel10k Theme
