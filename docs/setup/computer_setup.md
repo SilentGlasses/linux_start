@@ -138,23 +138,23 @@ source ~/.zshrc
 Here are some other useful tools and utilities you might want:
 
 - `bat` – A `cat` clone with syntax highlighting and Git integration.
-- `exa` – A modern replacement for `ls` with more features and colors.
+- `eza` – A modern replacement for `ls` with more features and colors.
 - `fzf` – A fast fuzzy finder for searching files, history, etc.
 - `ripgrep` – A super-fast recursive search tool, like `grep` but better.
 - `neovim` – A modern, extensible version of the Vim text editor.
 
 === "Debian-based"
     ```bash
-    sudo apt install bat exa fzf ripgrep neovim -y
+    sudo apt install bat eza fzf ripgrep -y
     ```
 === "Fedora-based"
     ```
-    sudo dnf install bat exa fzf ripgrep neovim -y
+    sudo dnf install bat eza fzf ripgrep -y
     ```
 === "Via Homebrew"
     - works the same on both distros
     ```bash
-    brew install bat exa fzf ripgrep neovim
+    brew install bat eza fzf ripgrep
     ```
 
 ## Reboot (optional)
